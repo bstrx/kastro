@@ -22,10 +22,14 @@ div.small {
 }
 
 /* Header */
-div#header div.small {
-    background-image: url('image/top.jpg');
-    width: 1200px;
+div#header {
+    height: 600px;
+}
 
+div#header div.small {
+    background-image: url('image/header-photo.jpg');
+    width: 1200px;
+    height: inherit;
 }
 
 /* General info */
@@ -78,5 +82,59 @@ div.service-item img {
 div#experience h2{
     font-size: 2rem;
     padding: 40px;
+}
+
+/* Contacts */
+div#contacts {
+    height: 550px;
+}
+
+div#contacts div.small {
+    background-image: url('image/top.jpg');
+    width: 1200px;
+    height: inherit;
+}
+
+div#contacts-block {
+    width: 300px;
+    height: 250px;
+    margin-left: 850px;
+    padding-top: 170px;
+}
+
+#contacts-block label {
+    color: white;
+    padding-bottom: 3px;
+    display: block;
+
+}
+.form-block {
+    margin-top: 14px;
+}
+
+#contacts-block input{
+    height: 30px;
+    width: 220px;
+    border: none;
+    display: block;
+    padding: 3px 0 3px 10px ;
+
+}
+
+#contacts-block textarea{
+    height: 50px;
+    width: 260px;
+    border: none;
+    display: block;
+    padding: 10px;
+
+}
+
+#contacts-block input[type="submit"] {
+    font-size: 1.3em;
+    background-color: #fa5b3c;
+    width: 247px;
+    color: white;
+    height: 40px;
 }
 

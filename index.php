@@ -68,16 +68,26 @@
     </div>
     <div id="contacts">
         <div class="small">
-            <form>
-                <input type="text" name="name"/>
-                <input type="text" name="contacts"/>
-                <input type="text" name="description"/>
-                <input type="submit" value="Отправить"/>
-            </form>
+            <div id="contacts-block">
+                <form>
+                    <div class="form-block">
+                        <label>ИМЯ</label>
+                        <input type="text" name="name"/>
+                    </div>
+                    <div class="form-block">
+                        <label>ОБРАТНАЯ СВЯЗЬ</label>
+                        <textarea name="contacts"></textarea>
+                    </div>
+                    <div class="form-block">
+                        <label>ОПИСАНИЕ ПРЕДЛОЖЕНИЯ</label>
+                        <textarea name="description"></textarea>
+                    </div>
+                    <div class="form-block">
+                        <input type="submit" value="Отправить"/>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </body>
 </html>
-
-<?php
-
