@@ -1,14 +1,83 @@
-body {
-    background-color: #184e8e;
+p, h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
 }
 
-div {
+body {
+    color: #1e2128;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    background-image: url('image/background.jpg');
+}
+
+body > div {
     height: 500px;
-    border-bottom: 2px solid white;
     margin: 0 auto;
 }
 
 div.small {
+    height: 500px;
+    background-color: bisque;
     width: 1000px;
-    background-color: aliceblue;
+    margin: 0 auto;
+    border-left: 1px solid #1e2128;
+    border-right: 1px solid #1e2128;
 }
+
+/* Header */
+div#header div.small {
+    background-image: url('image/top.jpg');
+    width: 1200px;
+
+}
+
+/* General info */
+div#general {
+    height: 240px;
+}
+
+
+div#general div.small {
+    height: 240px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+img#violin {
+    width:180px;
+    height: 180px;
+    float:left;
+}
+
+/* Services */
+div.service-item {
+    float:left;
+    width: 500px;
+    height: 250px;
+    padding: 65px;
+    box-sizing: border-box;
+}
+
+div.service-item div {
+}
+
+div.service-item img {
+    float: left;
+}
+
+.item-head {
+    font-size: 1.2rem;
+    padding-top:25px;
+    margin-left: 80px;
+    height: 60px;
+}
+
+.item-body {
+    margin-left: 30px;
+}
+
+/* Experience */
+div#experience h2{
+    font-size: 2rem;
+    padding: 40px;
+}
+
