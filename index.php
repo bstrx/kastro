@@ -26,14 +26,14 @@
             <div class="service-item">
                 <img src="image/quavers.png">
                 <div class="item-head">
-                    Выступление на праздниках
+                    Выступление на праздниках и корпоративах
                 </div>
                 <div class="item-body">
                     Живая скрипка скрасит любой корпоратив или банкет
                 </div>
             </div>
             <div class="service-item">
-                <img src="image/quavers.png">
+                <img src="image/violinBlack.png">
                 <div class="item-head">
                     Музыка для танца молодожёнов
                 </div>
@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="service-item">
-                <img src="image/quavers.png">
+                <img src="image/love.png">
                 <div class="item-head">
                     Музыкальный фон для свидания
                 </div>
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="service-item">
-                <img src="image/quavers.png">
+                <img src="image/musicSearch.png">
                 <div class="item-head">
                     Индивидуальный подбор музыки
                 </div>
