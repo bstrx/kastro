@@ -8,6 +8,7 @@ body {
     font-family:"Trebuchet MS", Helvetica, sans-serif;
     /*background-image: url('image/background.jpg');*/
     background-color: white;
+    line-height: 1.4;
 }
 
 body > div {
@@ -52,15 +53,20 @@ img#violin {
 }
 
 /* Services */
+div#service {
+    height: 540px;
+}
+
+div#service div.small {
+    height: inherit;
+}
+
 div.service-item {
     float:left;
     width: 500px;
     height: 250px;
     padding: 65px;
     box-sizing: border-box;
-}
-
-div.service-item div {
 }
 
 div.service-item img {
@@ -81,7 +87,7 @@ div.service-item img {
 /* Example */
 div#example h2{
     font-size: 2rem;
-    padding: 40px;
+    padding: 25px;
 }
 
 #video {
@@ -147,4 +153,50 @@ div#contacts-block {
     height: 40px;
 }
 
+/* experience */
+div#experience {
+    height: 350px;
+}
 
+div#experience small {
+    height: inherit;
+}
+
+div#experience li {
+    padding: 10px 0 20px 10px;
+    font-size: 1.1rem;
+}
+
+div#awards {
+    width: 450px;
+    float: left;
+    list-style: disc;
+}
+
+div#music {
+    width: 500px;
+    margin-left: 500px;
+}
+
+/* Example */
+div#example {
+    height: 460px;
+}
+
+div#example small {
+    height: inherit;
+}
+
+/* Price */
+div#price {
+    height: 180px;
+}
+
+div#price div.small {
+    height: inherit;
+    box-sizing: border-box;
+}
+
+div#price h3{
+    font-size: 1.5rem;
+}

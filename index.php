@@ -61,20 +61,48 @@
             </div>
         </div>
     </div>
+
     <div id="example">
         <div class="small">
-            <h2>Опыт выступлений:</h2>
             <div id="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4NC2Ia3As-U" frameborder="0" allowfullscreen></iframe>
+                <iframe width="630" height="370" src="https://www.youtube.com/embed/Z4fOXLon6qE" frameborder="0"></iframe>
             </div>
         </div>
     </div>
+
     <div id="experience">
         <div class="small">
-            <h2>Опыт выступлений:</h2>
+            <div id="awards">
+                <h2>Опыт выступлений:</h2>
+                <ul>
+                    <li>Общий стаж игры на скрипке - 14 лет</li>
+                    <li>5 лет коммерческих выступлений</li>
+                    <li>Кругосветное путешествие с цыганами</li>
+                    <li>Выступление с оркестром песни и пляски</li>
+                </ul>
+            </div>
+            <div id="music">
+                <h2>Репертуар (примеры)</h2>
+                <ul>
+                    <li>Metallica - The unforgiven</li>
+                    <li>Quadro - Скрипка</li>
+                    <li>Rob zombie - Dragula</li>
+                </ul>
+            </div>
 
         </div>
     </div>
+
+    <div id="price">
+        <div class="small">
+            <div>
+                <h3>Стоимость выступления</h3>
+                <br>
+                <p>Цена оговаривается индивидуально в зависимости от условий и места выступления. В среднем стоимость часа работы составляет <b>1500 рублей</b>.</p>
+            </div>
+        </div>
+    </div>
+
     <div id="contacts">
         <div class="small">
             <div id="contacts-block">
