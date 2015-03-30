@@ -78,10 +78,19 @@ div.service-item img {
     margin: 15px 0 0 30px;
 }
 
-/* Experience */
-div#experience h2{
+/* Example */
+div#example h2{
     font-size: 2rem;
     padding: 40px;
+}
+
+#video {
+    text-align:center;
+
+}
+#video iframe {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Contacts */
@@ -137,4 +146,5 @@ div#contacts-block {
     color: white;
     height: 40px;
 }
+
 

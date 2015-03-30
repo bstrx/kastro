@@ -7,7 +7,7 @@
 <body>
     <div id="header">
         <div class="small">
-            Там, где женщина играет роль первой скрипки, дирижеры ни к чему.
+            <!-- Там, где женщина играет роль первой скрипки, дирижеры ни к чему. -->
         </div>
     </div>
     <div id="general">
@@ -61,9 +61,18 @@
             </div>
         </div>
     </div>
+    <div id="example">
+        <div class="small">
+            <h2>Опыт выступлений:</h2>
+            <div id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4NC2Ia3As-U" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
     <div id="experience">
         <div class="small">
             <h2>Опыт выступлений:</h2>
+
         </div>
     </div>
     <div id="contacts">
