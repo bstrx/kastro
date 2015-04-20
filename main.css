@@ -4,6 +4,7 @@ p, h1, h2, h3, h4 {
 }
 
 body {
+    margin: 0;
     color: #1e2128;
     font-family:"Trebuchet MS", Helvetica, sans-serif;
     /*background-image: url('image/background.jpg');*/
@@ -28,6 +29,7 @@ div#header {
 }
 
 div#header div.small {
+    border-radius: 0 0 5px 5px;
     background-image: url('image/header-photo.jpg');
     width: 1200px;
     height: inherit;
@@ -35,7 +37,7 @@ div#header div.small {
 
 /* General info */
 div#general {
-    height: 320px;
+    height: 300px;
 }
 
 
@@ -105,7 +107,8 @@ div#contacts {
 }
 
 div#contacts div.small {
-    background-image: url('image/top.jpg');
+    border-radius: 5px 5px 0 0;
+    background-image: url('image/footer-photo.jpg');
     width: 1200px;
     height: inherit;
 }
@@ -199,4 +202,30 @@ div#price div.small {
 
 div#price h3{
     font-size: 1.5rem;
+}
+
+div#completed {
+    height: 100px;
+}
+
+div#completed .small{
+    font-size: 1.3rem;
+    padding-top: 35px;
+    text-align: center;
+    height: inherit;
+    background-color: greenyellow;
+    box-sizing: border-box;
+}
+
+div#error {
+    height: 100px;
+}
+
+div#error .small{
+    font-size: 1.3rem;
+    padding-top: 35px;
+    text-align: center;
+    height: inherit;
+    background-color: tomato;
+    box-sizing: border-box;
 }

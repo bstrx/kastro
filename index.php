@@ -1,3 +1,25 @@
+<?php
+$fillAllMessage = false;
+$mailingCompleted = false;
+
+$name = isset($_POST['name']) ? $_POST['name'] : null;
+$contacts = isset($_POST['contacts']) ? $_POST['contacts'] : null;
+$description = isset($_POST['description']) ? $_POST['description'] : null;
+
+if ($name || $contacts || $description) {
+    if ($name && $contacts && $description) {
+        $text = sprintf("
+Имя: %s
+Обратная связь: %s
+Предложение: %s
+", $name, $contacts, $description);
+        mail('groundsale@yandex.ru', 'Письмо с ripka.ru', $text);
+        $mailingCompleted = true;
+    } else {
+        $fillAllMessage = true;
+    }
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,6 +27,13 @@
     <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
 <body>
+    <?php
+        if ($mailingCompleted) {
+            echo '<div id="completed"><div class="small">Сообщение успешно отправлено, с вами свяжутся в ближайшее время!</div></div>';
+        } elseif ($fillAllMessage) {
+            echo '<div id="error"><div class="small">Пожалуйста, заполните все поля в заявке! <a href="#contacts">Перейти к заполнению</a></div></div>';
+        }
+    ?>
     <div id="header">
         <div class="small">
             <!-- Там, где женщина играет роль первой скрипки, дирижеры ни к чему. -->
@@ -12,9 +41,8 @@
     </div>
     <div id="general">
         <div class="small">
-            <img src="image/violin.jpg" id='violin'>
-            <div style="margin-left: 210px">
-                <h1>Живое исполнение на скрипке</h1>
+            <div>
+                <h1 style="text-align:center">Живое исполнение на скрипке</h1>
                 <br>
                 <p>Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
                     Используется он веб-дизайнерами для вставки на интернет-страницы и демонстрации внешнего вида контента, просмотра шрифтов, абзацев, отступов и т.д. Так как цель применения такого текста исключительно демонстрационная, то и смысловую нагрузку ему нести совсем необязательно. Более того, нечитабельность текста сыграет на руку при оценке качества восприятия макета.</p>
@@ -106,7 +134,7 @@
     <div id="contacts">
         <div class="small">
             <div id="contacts-block">
-                <form>
+                <form method="post">
                     <div class="form-block">
                         <label>ИМЯ</label>
                         <input type="text" name="name"/>
