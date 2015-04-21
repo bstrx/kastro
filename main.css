@@ -3,6 +3,10 @@ p, h1, h2, h3, h4 {
     padding: 0;
 }
 
+a, a:visited, a:hover {
+    color: #1e2128;
+}
+
 body {
     margin: 0;
     color: #1e2128;
@@ -35,6 +39,12 @@ div#header div.small {
     height: inherit;
 }
 
+div#header div.small span {
+    position: relative;
+    font-size: 25px;
+    top: 30px;
+    left: 40px;
+}
 /* General info */
 div#general {
     height: 300px;

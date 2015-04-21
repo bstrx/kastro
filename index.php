@@ -11,7 +11,8 @@ if ($name || $contacts || $description) {
         $text = sprintf("
 Имя: %s
 Обратная связь: %s
-Предложение: %s
+Предложение:
+%s
 ", $name, $contacts, $description);
         mail('groundsale@yandex.ru', 'Письмо с ripka.ru', $text);
         $mailingCompleted = true;
@@ -36,7 +37,9 @@ if ($name || $contacts || $description) {
     ?>
     <div id="header">
         <div class="small">
-            <!-- Там, где женщина играет роль первой скрипки, дирижеры ни к чему. -->
+            <span>
+                Живая скрипка на праздники и корпоративы.
+            </span>
         </div>
     </div>
     <div id="general">
