@@ -1,3 +1,4 @@
+
 p, h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
@@ -10,9 +11,9 @@ a, a:visited, a:hover {
 body {
     margin: 0;
     color: #1e2128;
-    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-family:Verdana, Geneva, sans-serif;
     /*background-image: url('image/background.jpg');*/
-    background-color: white;
+    background: url('image/huge-back.jpg');
     line-height: 1.4;
 }
 
